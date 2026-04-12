@@ -294,212 +294,203 @@
       margin: 0;
     }
 
-    /* MENU */
-    .menu { background: var(--black); }
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="menu-header">
+      <div>
+        <p class="section-label">Wat wij serveren</p>
+        <h2 class="section-title">Ons <span>Menu</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-tabs">
+        <button class="menu-tab active" onclick="showTab('ontbijt', this)">Ontbijt</button>
+        <button class="menu-tab" onclick="showTab('gmsemen', this)">Gevulde Msemen</button>
+        <button class="menu-tab" onclick="showTab('broodjes', this)">Broodjes & Panini</button>
+        <button class="menu-tab" onclick="showTab('schotels', this)">Schotels</button>
+        <button class="menu-tab" onclick="showTab('burgers', this)">Burgers</button>
+        <button class="menu-tab" onclick="showTab('taco', this)">Taco's</button>
+        <button class="menu-tab" onclick="showTab('pasta', this)">Pasta's</button>
+        <button class="menu-tab" onclick="showTab('loadedfries', this)">Loaded Fries</button>
+        <button class="menu-tab" onclick="showTab('snacks', this)">Snacks</button>
+        <button class="menu-tab" onclick="showTab('kinder', this)">Kinderen</button>
+        <button class="menu-tab" onclick="showTab('dranken', this)">Dranken</button>
+      </div>
+    </div>
 
-    .menu-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 2.5rem;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
+    <!-- ONTBIJT -->
+    <div class="menu-category active" id="ontbijt">
+      <div class="menu-section-header">Ontbijt</div>
+      <div class="menu-item">
+        <div><h4>Marokkaans Ontbijt</h4><p>Vers brood, msemen, 2 spiegeleieren met olijfolie, olijven, La Vache qui rit en kaas. Verse jus &amp; thee of koffie</p></div>
+        <span class="menu-price">€12,00</span>
+      </div>
+      <div class="menu-item">
+        <div><h4>The Green Star Ontbijt</h4><p>2 spiegeleieren met gehakt, olijven, La Vache qui rit en kaas. Verse jus &amp; thee of koffie</p></div>
+        <span class="menu-price">€13,50</span>
+      </div>
+      <div class="menu-section-header">Msemen</div>
+      <div class="menu-item">
+        <div><h4>Naturel Msemen</h4><p></p></div>
+        <span class="menu-price">€4,00</span>
+      </div>
+      <div class="menu-item">
+        <div><h4>Met kaas of honing</h4><p></p></div>
+        <span class="menu-price">€5,50</span>
+      </div>
+      <div class="menu-item">
+        <div><h4>Met Nutella</h4><p></p></div>
+        <span class="menu-price">€5,50</span>
+      </div>
+      <div class="menu-item">
+        <div><h4>Met olijfolie / La Vache qui rit</h4><p></p></div>
+        <span class="menu-price">€5,00</span>
+      </div>
+      <div class="menu-section-header">Soep</div>
+      <div class="menu-item">
+        <div><h4>Marokkaanse Soep</h4><p></p></div>
+        <span class="menu-price">€5,00</span>
+      </div>
+    </div>
 
-    .menu-tabs {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-    }
+    <!-- GEVULDE MSEMEN -->
+    <div class="menu-category" id="gmsemen">
+      <div class="menu-section-header">Gevulde Msemen</div>
+      <div class="menu-item"><div><h4>Msemen Kip</h4></div><span class="menu-price">€7,50</span></div>
+      <div class="menu-item"><div><h4>Msemen Gehakt</h4></div><span class="menu-price">€7,50</span></div>
+      <div class="menu-item"><div><h4>Msemen Tonijn</h4></div><span class="menu-price">€7,50</span></div>
+    </div>
 
-    .menu-tab {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      color: var(--muted);
-      font-family: 'Nunito', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      cursor: pointer;
-      padding: 0.5rem 1.1rem;
-      border-radius: 4px;
-      transition: all 0.2s;
-    }
+    <!-- BROODJES & PANINI -->
+    <div class="menu-category" id="broodjes">
+      <div class="menu-section-header">Star Bollen</div>
+      <div class="menu-note">Bollen worden geserveerd met salade en saus (friet +€3 / friet &amp; drankje +€4,50)</div>
+      <div class="menu-item"><div><h4>Shoarma Bol</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Kefta Bol</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Merguez Bol</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Brochet Bol</h4></div><span class="menu-price">€9,00</span></div>
+      <div class="menu-item"><div><h4>Kipfilet Bol</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Garnalen Bol</h4></div><span class="menu-price">€9,00</span></div>
+      <div class="menu-item"><div><h4>Mix Bol</h4><p>2 soorten vlees</p></div><span class="menu-price">€10,00</span></div>
+      <div class="menu-section-header">Broodjes</div>
+      <div class="menu-item"><div><h4>Broodje Grillworst</h4><p>Naturel, kaas of madame jeanette</p></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Broodje Kippeling</h4></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Broodje Hotdog</h4></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-section-header">Panini</div>
+      <div class="menu-item"><div><h4>Panini Grillworst</h4><p>Naturel, kaas of madame jeanette</p></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Panini Kip</h4></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Panini Tonijn</h4></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Panini Garnalen</h4></div><span class="menu-price">€7,50</span></div>
+    </div>
 
-    .menu-tab.active, .menu-tab:hover {
-      background: var(--green);
-      color: #fff;
-      border-color: var(--green);
-    }
 
-    .menu-category { display: none; }
-    .menu-category.active {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-    }
 
-    .menu-note {
-      grid-column: 1 / -1;
-      background: var(--dark2);
-      padding: 0.9rem 1.5rem;
-      font-size: 0.82rem;
-      color: var(--muted);
-      font-style: italic;
-      border-bottom: 1px solid var(--border);
-    }
+    <!-- SCHOTELS -->
+    <div class="menu-category" id="schotels">
+      <div class="menu-note">Schotels worden geserveerd met salade, saus, friet of rijst</div>
+      <div class="menu-item"><div><h4>Shoarma Schotel</h4></div><span class="menu-price">€16,50</span></div>
+      <div class="menu-item"><div><h4>Kefta Schotel</h4></div><span class="menu-price">€16,50</span></div>
+      <div class="menu-item"><div><h4>Merguez Schotel</h4></div><span class="menu-price">€16,50</span></div>
+      <div class="menu-item"><div><h4>Brochet Schotel</h4></div><span class="menu-price">€17,00</span></div>
+      <div class="menu-item"><div><h4>Kipfilet Schotel</h4></div><span class="menu-price">€16,50</span></div>
+      <div class="menu-item"><div><h4>Garnalen Schotel</h4></div><span class="menu-price">€17,00</span></div>
+      <div class="menu-item"><div><h4>Mix Schotel</h4><p>2 soorten vlees</p></div><span class="menu-price">€17,50</span></div>
+    </div>
 
-    .menu-item {
-      background: var(--dark2);
-      padding: 1.4rem 1.8rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1.5rem;
-      transition: background 0.2s;
-    }
+    <!-- BURGERS -->
+    <div class="menu-category" id="burgers">
+      <div class="menu-note">Burgers worden geserveerd met salade en saus (friet +€3 / friet &amp; drankje +€4,50)</div>
+      <div class="menu-item"><div><h4>Classic Burger</h4><p>Rundergehakt, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Classic Double Burger</h4><p>2x rundergehakt, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€9,00</span></div>
+      <div class="menu-item"><div><h4>The Green Star Burger</h4><p>Rundergehakt, bacon, cheddar, huisgemaakte saus, sla en tomaat</p></div><span class="menu-price">€10,00</span></div>
+      <div class="menu-item"><div><h4>Chicken Burger</h4><p>Kipgehakt, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Crispy Chicken Burger</h4><p>Crispy chicken, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Smash Burger</h4><p>Smashed rundergehakt, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Double Smash Burger</h4><p>2x smashed rundergehakt, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€10,00</span></div>
+      <div class="menu-item"><div><h4>Triple Smash Burger</h4><p>3x smashed rundergehakt, cheddar, andalousesaus, sla en tomaat</p></div><span class="menu-price">€12,00</span></div>
+    </div>
 
-    .menu-item:hover { background: var(--dark3); }
+    <!-- TACO -->
+    <div class="menu-category" id="taco">
+      <div class="menu-note">Taco's worden geserveerd met friet (friet +€3 / friet &amp; drankje +€4,50)</div>
+      <div class="menu-item"><div><h4>Taco Kip</h4><p>Kip, sla, kaas en andalouse</p></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Taco Crispy Kip</h4><p>Crispy kip, sla, kaas en andalouse</p></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Taco Kefta</h4><p>Gehakt, sla, kaas en andalouse</p></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Taco Garnalen</h4><p>Garnalen, sla, kaas en andalouse</p></div><span class="menu-price">€9,50</span></div>
+      <div class="menu-item"><div><h4>Taco Mix</h4><p>Kip en garnalen, sla, kaas en andalouse</p></div><span class="menu-price">€10,00</span></div>
+    </div>
 
-    .menu-item h4 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--cream);
-      margin-bottom: 0.25rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
+    <!-- PASTA -->
+    <div class="menu-category" id="pasta">
+      <div class="menu-note">Pasta's worden geserveerd met penne</div>
+      <div class="menu-item"><div><h4>Pasta Pollo</h4><p>Kip, roomsaus, ui, champignon en broccoli</p></div><span class="menu-price">€14,00</span></div>
+      <div class="menu-item"><div><h4>Pasta Gamba's</h4><p>Gamba's, roomsaus, ui, champignon en broccoli</p></div><span class="menu-price">€14,50</span></div>
+      <div class="menu-item"><div><h4>Pasta Bolognese</h4><p>Gehakt in tomatensaus en Parmezaanse kaas</p></div><span class="menu-price">€13,50</span></div>
+      <div class="menu-item"><div><h4>Pasta Tonno</h4><p>Tonijn en uien in tomatensaus en Parmezaanse kaas</p></div><span class="menu-price">€13,50</span></div>
+      <div class="menu-item"><div><h4>Pasta Vegetariana</h4><p>Champignon, broccoli, paprika, ui in roomsaus en Parmezaanse kaas</p></div><span class="menu-price">€13,50</span></div>
+    </div>
 
-    .menu-item p {
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 400;
-    }
+    <!-- LOADED FRIES -->
+    <div class="menu-category" id="loadedfries">
+      <div class="menu-section-header">Loaded Fries</div>
+      <div class="menu-item"><div><h4>Loaded Fries Crispy Chicken</h4><p>Fries met krokante kip, cheesy saus, lente-uitjes, gebakken uitjes, maïs en jalapeño's</p></div><span class="menu-price">€13,00</span></div>
+      <div class="menu-item"><div><h4>Loaded Fries Garnalen</h4><p>Fries met gamba's, cheesy saus, lente-uitjes, gebakken uitjes, maïs en jalapeño's</p></div><span class="menu-price">€14,00</span></div>
+      <div class="menu-item"><div><h4>Loaded Fries Mix</h4><p>Fries met krokante kip, gamba's, cheesy saus, lente-uitjes, gebakken uitjes, maïs en jalapeño's</p></div><span class="menu-price">€14,50</span></div>
+    </div>
 
-    .menu-price {
-      color: var(--green-light);
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.3rem;
-      white-space: nowrap;
-      letter-spacing: 0.04em;
-    }
+    <!-- SNACKS -->
+    <div class="menu-category" id="snacks">
+      <div class="menu-section-header">Snacks</div>
+      <div class="menu-item"><div><h4>Friet</h4></div><span class="menu-price">€3,50</span></div>
+      <div class="menu-item"><div><h4>Friet met Truffelmayo &amp; Parmezaan</h4></div><span class="menu-price">€6,00</span></div>
+      <div class="menu-item"><div><h4>Chicken Strips / Hotwings (3 st)</h4></div><span class="menu-price">€4,50</span></div>
+      <div class="menu-item"><div><h4>Nuggets (5 st)</h4></div><span class="menu-price">€4,50</span></div>
+      <div class="menu-note" style="border-top: 1px solid var(--border); border-bottom: none;">Sauzen vanaf €1,00 — Mayonaise, mango mayo, ketchup, curry, andalouse, satésaus, knoflooksaus</div>
+    </div>
 
-    .menu-section-header {
-      grid-column: 1 / -1;
-      background: var(--dark3);
-      padding: 0.7rem 1.8rem;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.1rem;
-      color: var(--green-light);
-      letter-spacing: 0.1em;
-      border-bottom: 1px solid var(--border);
-    }
+    <!-- KINDER -->
+    <div class="menu-category" id="kinder">
+      <div class="menu-note">Kindermenu's inclusief frietje en Capri-Sun</div>
+      <div class="menu-item"><div><h4>Hamburger Menu</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Chicken Burger Menu</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>4 Nuggets Menu</h4></div><span class="menu-price">€8,00</span></div>
+    </div>
 
-    /* BEZORGING */
-    .bezorging { background: var(--dark); }
+    <!-- DRANKEN -->
+    <div class="menu-category" id="dranken">
+      <div class="menu-section-header">Koude Dranken</div>
+      <div class="menu-item"><div><h4>Frisdrank (diversen)</h4></div><span class="menu-price">€2,50</span></div>
+      <div class="menu-item"><div><h4>Redbull</h4></div><span class="menu-price">€3,00</span></div>
+      <div class="menu-item"><div><h4>Chocomel / Fristi</h4></div><span class="menu-price">€3,00</span></div>
+      <div class="menu-item"><div><h4>Verse Jus d'Orange</h4></div><span class="menu-price">€4,50</span></div>
+      <div class="menu-item"><div><h4>Iced Matcha</h4><p>Aardbei / Mango / Passievrucht</p></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-section-header">Shakes &amp; Smoothies</div>
+      <div class="menu-item"><div><h4>Aardbei Smoothie</h4><p>Jus d'orange en aardbeien</p></div><span class="menu-price">€5,50</span></div>
+      <div class="menu-item"><div><h4>Hawaï Smoothie</h4><p>Jus d'orange, ananas en mango</p></div><span class="menu-price">€5,50</span></div>
+      <div class="menu-item"><div><h4>Exotic Smoothie</h4><p>Jus d'orange en tropisch fruit</p></div><span class="menu-price">€6,00</span></div>
+      <div class="menu-item"><div><h4>Avocado Shake</h4><p>Melk en avocado</p></div><span class="menu-price">€5,50</span></div>
+      <div class="menu-item"><div><h4>The Green Star Smoothie</h4><p>Melk, avocado en pistache</p></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-section-header">Mocktails</div>
+      <div class="menu-item"><div><h4>Mojito</h4><p>Aardbei / Passievrucht (met Redbull +€1)</p></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Pina Colada</h4></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Blue Curaçao</h4></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>Bubble Gum</h4></div><span class="menu-price">€7,00</span></div>
+      <div class="menu-item"><div><h4>The Green Star Lemonade</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-section-header">Warme Dranken</div>
+      <div class="menu-item"><div><h4>Munt Thee</h4></div><span class="menu-price">€2,50</span></div>
+      <div class="menu-item"><div><h4>Nederlandse Thee</h4></div><span class="menu-price">€2,50</span></div>
+      <div class="menu-item"><div><h4>Marokkaanse Thee</h4></div><span class="menu-price">€3,50</span></div>
+      <div class="menu-item"><div><h4>Marokkaanse Thee (Potje)</h4></div><span class="menu-price">€4,50</span></div>
+      <div class="menu-item"><div><h4>Koffie Cream / Espresso</h4></div><span class="menu-price">€2,50</span></div>
+      <div class="menu-item"><div><h4>Café au Lait</h4></div><span class="menu-price">€3,50</span></div>
+      <div class="menu-item"><div><h4>Cappuccino / Latte Macchiato</h4></div><span class="menu-price">€3,50</span></div>
+      <div class="menu-item"><div><h4>Warme Chocolademelk</h4></div><span class="menu-price">€3,50</span></div>
+      <div class="menu-section-header">Toetjes</div>
+      <div class="menu-item"><div><h4>Toetjes</h4><p>Vraag naar de beschikbare toetjes</p></div><span class="menu-price">Diverse prijzen</span></div>
+    </div>
 
-    .bezorging-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .delivery-card {
-      background: var(--dark2);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2.5rem;
-    }
-
-    .delivery-card h3 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      color: var(--cream);
-      letter-spacing: 0.04em;
-      margin-bottom: 1.5rem;
-    }
-
-    .delivery-apps {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .app-link {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      background: var(--dark3);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem 1.5rem;
-      text-decoration: none;
-      transition: border-color 0.2s, background 0.2s;
-    }
-
-    .app-link:hover { border-color: var(--green); background: rgba(45,138,62,0.08); }
-
-    .app-link .app-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-    }
-
-    .app-link .uber { background: #000; }
-    .app-link .thuis { background: #ff6900; }
-
-    .app-link-text strong {
-      display: block;
-      color: var(--cream);
-      font-size: 0.95rem;
-      font-weight: 700;
-    }
-
-    .app-link-text span {
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-
-    .app-link .arrow {
-      margin-left: auto;
-      color: var(--green-light);
-      font-size: 1.2rem;
-    }
-
-    .delivery-features { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.2rem; }
-
-    .delivery-feature {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-    }
-
-    .delivery-feature .feat-icon {
-      width: 42px;
-      height: 42px;
-      min-width: 42px;
-      background: rgba(45,138,62,0.12);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-    }
-
-    .delivery-feature h4 { font-size: 0.95rem; font-weight: 700; color: var(--cream); margin-bottom: 0.15rem; }
-    .delivery-feature p { font-size: 0.82rem; color: var(--muted); }
-
+  </div>
+</section>
     /* OPENINGSTIJDEN */
     .hours { background: var(--black); }
 
@@ -698,8 +689,7 @@
         <h2 class="section-title">Thuis in <span>Utrecht</span></h2>
         <div class="divider"></div>
         <p>The Green Star is dé plek in Utrecht waar je terecht kunt voor heerlijk eten, verse dranken en een ontspannen sfeer. Van een uitgebreid Marokkaans ontbijt tot sappige burgers, verse pasta's en verfrissende smoothies — bij ons is er altijd wat lekkers.</p>
-        <p>Ons team staat elke dag voor je klaar met verse ingrediënten en gerechten die met liefde worden bereid. Of je nu bij ons aan tafel zit of thuis laat bezorgen via Uber Eats of Thuisbezorgd — de kwaliteit is altijd hetzelfde.</p>
-        <p>Welkom bij The Green Star. Food, Drinks &amp; More.</p>
+        <p>Ons team staat elke dag voor je klaar met verse ingrediënten en gerechten die met liefde worden bereid. Of je nu bij ons aan tafel zit of je eten afhaalt — de kwaliteit is altijd hetzelfde. Food, Drinks &amp; More.</p>
         <div class="about-features">
           <div class="about-feature">
             <span class="icon">🌿</span>
