@@ -698,7 +698,7 @@
         <h2 class="section-title">Thuis in <span>Utrecht</span></h2>
         <div class="divider"></div>
         <p>The Green Star is dé plek in Utrecht waar je terecht kunt voor heerlijk eten, verse dranken en een ontspannen sfeer. Van een uitgebreid Marokkaans ontbijt tot sappige burgers, verse pasta's en verfrissende smoothies — bij ons is er altijd wat lekkers.</p>
-        <p>Ons team staat elke dag voor je klaar met verse ingrediënten en gerechten die met liefde worden bereid. Of je nu bij ons aan tafel zit of thuis laat bezorgen via Uber Eats of Thuisbezorgd — de kwaliteit is altijd hetzelfde.</p>
+        <p>Ons team staat elke dag voor je klaar met verse ingrediënten en gerechten die met liefde worden bereid. Of je nu bij ons aan tafel zit of je eten afhaalt, de kwaliteit is altijd hetzelfde.</p>
         <p>Welkom bij The Green Star. Food, Drinks &amp; More.</p>
         <div class="about-features">
           <div class="about-feature">
@@ -734,7 +734,8 @@
       </div>
       <div class="menu-tabs">
         <button class="menu-tab active" onclick="showTab('ontbijt', this)">Ontbijt</button>
-        <button class="menu-tab" onclick="showTab('bollen', this)">Star Bollen</button>
+        <button class="menu-tab" onclick="showTab('gmsemen', this)">Gevulde Msemen</button>
+        <button class="menu-tab" onclick="showTab('broodjes', this)">Broodjes & Panini's</button>
         <button class="menu-tab" onclick="showTab('schotels', this)">Schotels</button>
         <button class="menu-tab" onclick="showTab('burgers', this)">Burgers</button>
         <button class="menu-tab" onclick="showTab('taco', this)">Taco's</button>
@@ -749,12 +750,16 @@
     <div class="menu-category active" id="ontbijt">
       <div class="menu-section-header">Ontbijt</div>
       <div class="menu-item">
-        <div><h4>Marokkaans Ontbijt</h4><p>Vers brood, msemen, 2 spiegeleieren met olijfolie, olijven, La Vache qui rit en kaas. Verse jus &amp; thee of koffie</p></div>
+        <div><h4>Classic Ontbijt</h4><p>Vers brood, twee spiegeleieren met olijfolie, olijven, La Vache qui rit en thee of koffie</p></div>
+        <span class="menu-price">€8,00</span>
+      </div>
+      <div class="menu-item">
+        <div><h4>The Green Star Ontbijt</h4><p>Vers brood, msemen twee spiegeleieren, olijven, La Vache qui rit, salami, kaas. Verse jus d’orange en thee of koffie</p></div>
         <span class="menu-price">€12,00</span>
       </div>
       <div class="menu-item">
-        <div><h4>The Green Star Ontbijt</h4><p>2 spiegeleieren met gehakt, olijven, La Vache qui rit en kaas. Verse jus &amp; thee of koffie</p></div>
-        <span class="menu-price">€13,50</span>
+        <div><h4>Marokkaanse Soep</h4><p></p></div>
+        <span class="menu-price">€5,00</span>
       </div>
       <div class="menu-section-header">Msemen</div>
       <div class="menu-item">
@@ -773,66 +778,32 @@
         <div><h4>Met olijfolie / La Vache qui rit</h4><p></p></div>
         <span class="menu-price">€5,00</span>
       </div>
-      <div class="menu-section-header">Gevulde Msemen</div>
-      <div class="menu-item">
-        <div><h4>Msemen Kip</h4><p></p></div>
-        <span class="menu-price">€7,50</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Msemen Gehakt</h4><p></p></div>
-        <span class="menu-price">€7,50</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Msemen Tonijn</h4><p></p></div>
-        <span class="menu-price">€7,50</span>
-      </div>
-      <div class="menu-section-header">Soep</div>
-      <div class="menu-item">
-        <div><h4>Marokkaanse Soep</h4><p></p></div>
-        <span class="menu-price">€5,00</span>
-      </div>
-      <div class="menu-section-header">Broodjes</div>
-      <div class="menu-item">
-        <div><h4>Broodje Grillworst</h4><p>Naturel, kaas of madame jeanette</p></div>
-        <span class="menu-price">€6,50</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Broodje Kippeling</h4><p></p></div>
-        <span class="menu-price">€7,00</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Broodje Hotdog</h4><p></p></div>
-        <span class="menu-price">€6,50</span>
-      </div>
-      <div class="menu-section-header">Panini</div>
-      <div class="menu-item">
-        <div><h4>Panini Grillworst</h4><p>Naturel, kaas of madame jeanette</p></div>
-        <span class="menu-price">€6,50</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Panini Kip</h4><p></p></div>
-        <span class="menu-price">€6,50</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Panini Tonijn</h4><p></p></div>
-        <span class="menu-price">€6,50</span>
-      </div>
-      <div class="menu-item">
-        <div><h4>Panini Garnalen</h4><p></p></div>
-        <span class="menu-price">€7,50</span>
-      </div>
     </div>
 
-    <!-- STAR BOLLEN -->
-    <div class="menu-category" id="bollen">
-      <div class="menu-note">Bollen worden geserveerd met salade en saus (friet +€3 / friet &amp; drankje +€4,50)</div>
-      <div class="menu-item"><div><h4>Shoarma Bol</h4></div><span class="menu-price">€8,00</span></div>
-      <div class="menu-item"><div><h4>Kefta Bol</h4></div><span class="menu-price">€8,00</span></div>
-      <div class="menu-item"><div><h4>Merguez Bol</h4></div><span class="menu-price">€8,00</span></div>
-      <div class="menu-item"><div><h4>Brochet Bol</h4></div><span class="menu-price">€9,00</span></div>
-      <div class="menu-item"><div><h4>Kipfilet Bol</h4></div><span class="menu-price">€8,00</span></div>
-      <div class="menu-item"><div><h4>Garnalen Bol</h4></div><span class="menu-price">€9,00</span></div>
-      <div class="menu-item"><div><h4>Mix Bol</h4><p>2 soorten vlees</p></div><span class="menu-price">€10,00</span></div>
+  <!-- GEVULDE MSEMEN -->
+    <div class="menu-category" id="gmsemen">
+      <div class="menu-section-header">Gevulde Msemen</div>
+      <div class="menu-item"><div><h4>Msemen Kip</h4></div><span class="menu-price">€7,50</span></div>
+      <div class="menu-item"><div><h4>Msemen Gehakt</h4></div><span class="menu-price">€7,50</span></div>
+      <div class="menu-item"><div><h4>Msemen Tonijn</h4></div><span class="menu-price">€7,50</span></div>
+    </div>
+    
+  <!-- BROODJES & PANINI -->
+    <div class="menu-category" id="broodjes">
+      <div class="menu-section-header">Broodjes</div>
+      <div class="menu-note">broodjes & panini worden geserveerd met salade en saus (friet +€3 / friet &amp; drankje +€4,50)</div>
+      <div class="menu-item"><div><h4>Broodje Grillworst</h4><p>Naturel, kaas of madame jeanette</p></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Broodje Shoarma</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Broodje Kefta</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Broodje Merguez</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Broodje Kipfilet</h4></div><span class="menu-price">€8,00</span></div>
+      <div class="menu-item"><div><h4>Broodje Garnalen</h4></div><span class="menu-price">€9,00</span></div>
+      <div class="menu-item"><div><h4>Mix Broodje</h4><p>2 soorten vlees</p></div><span class="menu-price">€10,00</span></div>
+      <div class="menu-section-header">Panini</div>
+      <div class="menu-item"><div><h4>Panini Grillworst</h4><p>Naturel, kaas of madame jeanette</p></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Panini Kip</h4></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Panini Tonijn</h4></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>Panini Garnalen</h4></div><span class="menu-price">€7,50</span></div>
     </div>
 
     <!-- SCHOTELS -->
@@ -841,7 +812,6 @@
       <div class="menu-item"><div><h4>Shoarma Schotel</h4></div><span class="menu-price">€16,50</span></div>
       <div class="menu-item"><div><h4>Kefta Schotel</h4></div><span class="menu-price">€16,50</span></div>
       <div class="menu-item"><div><h4>Merguez Schotel</h4></div><span class="menu-price">€16,50</span></div>
-      <div class="menu-item"><div><h4>Brochet Schotel</h4></div><span class="menu-price">€17,00</span></div>
       <div class="menu-item"><div><h4>Kipfilet Schotel</h4></div><span class="menu-price">€16,50</span></div>
       <div class="menu-item"><div><h4>Garnalen Schotel</h4></div><span class="menu-price">€17,00</span></div>
       <div class="menu-item"><div><h4>Mix Schotel</h4><p>2 soorten vlees</p></div><span class="menu-price">€17,50</span></div>
@@ -873,8 +843,6 @@
       <div class="menu-note">Pasta's worden geserveerd met penne</div>
       <div class="menu-item"><div><h4>Pasta Pollo</h4><p>Kip, roomsaus, ui, champignon en broccoli</p></div><span class="menu-price">€14,00</span></div>
       <div class="menu-item"><div><h4>Pasta Gamba's</h4><p>Gamba's, roomsaus, ui, champignon en broccoli</p></div><span class="menu-price">€14,50</span></div>
-      <div class="menu-item"><div><h4>Pasta Bolognese</h4><p>Gehakt in tomatensaus en Parmezaanse kaas</p></div><span class="menu-price">€13,50</span></div>
-      <div class="menu-item"><div><h4>Pasta Tonno</h4><p>Tonijn en uien in tomatensaus en Parmezaanse kaas</p></div><span class="menu-price">€13,50</span></div>
       <div class="menu-item"><div><h4>Pasta Vegetariana</h4><p>Champignon, broccoli, paprika, ui in roomsaus en Parmezaanse kaas</p></div><span class="menu-price">€13,50</span></div>
     </div>
 
@@ -913,13 +881,12 @@
       <div class="menu-item"><div><h4>Hawaï Smoothie</h4><p>Jus d'orange, ananas en mango</p></div><span class="menu-price">€5,50</span></div>
       <div class="menu-item"><div><h4>Exotic Smoothie</h4><p>Jus d'orange en tropisch fruit</p></div><span class="menu-price">€6,00</span></div>
       <div class="menu-item"><div><h4>Avocado Shake</h4><p>Melk en avocado</p></div><span class="menu-price">€5,50</span></div>
-      <div class="menu-item"><div><h4>The Green Star Smoothie</h4><p>Melk, avocado en pistache</p></div><span class="menu-price">€6,50</span></div>
+      <div class="menu-item"><div><h4>The Green Star Lemonade</h4></div><span class="menu-price">€8,00</span></div>
       <div class="menu-section-header">Mocktails</div>
       <div class="menu-item"><div><h4>Mojito</h4><p>Aardbei / Passievrucht (met Redbull +€1)</p></div><span class="menu-price">€7,00</span></div>
       <div class="menu-item"><div><h4>Pina Colada</h4></div><span class="menu-price">€7,00</span></div>
       <div class="menu-item"><div><h4>Blue Curaçao</h4></div><span class="menu-price">€7,00</span></div>
       <div class="menu-item"><div><h4>Bubble Gum</h4></div><span class="menu-price">€7,00</span></div>
-      <div class="menu-item"><div><h4>The Green Star Lemonade</h4></div><span class="menu-price">€8,00</span></div>
       <div class="menu-section-header">Warme Dranken</div>
       <div class="menu-item"><div><h4>Munt Thee</h4></div><span class="menu-price">€2,50</span></div>
       <div class="menu-item"><div><h4>Nederlandse Thee</h4></div><span class="menu-price">€2,50</span></div>
